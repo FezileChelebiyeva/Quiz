@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  background-color: $primary-color;
+  .container {
+    .header {
+        h4 {
+            font-size: 40px;
+        }
+      @include flex(space-between);
+      color: $footer-text;
+      .navbar {
+        ul {
+        display: flex;
+        list-style: none;
+        column-gap: 15px;
+        li {
+            a {
+                text-decoration: none;
+                color: $footer-text;
+            }
+        }
+        }
+      }
+      .sign-login {
+        .btn {
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: $footer-text;
+            color: $secondary-color;
+        }
+        .btn2 {
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: transparent;
+            color: $footer-text;
+            border: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+section {
+  .container {
+    .head {
+      @include flex();
+      flex-direction: column;
+      color: $primary-color;
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+      }
+      p {
+        width: 495px;
+        text-align: center;
+      }
+    }
+    .team {
+      @include flex();
+      flex-direction: column;
+      margin-top: 64px;
+      row-gap: 80px;
+      .team-top {
+        display: flex;
+        column-gap: 57px;
+      }
+      .team-bottom {
+        display: flex;
+        column-gap: 57px;
+      }
+      .card {
+        img {
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        h4 {
+          color: $primary-color;
+          font-weight: 700;
+          font-size: 24px;
+        }
+        p {
+          color: $primary-color;
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+      .icons {
+      @include flex(flex-start);
+      column-gap: 10px;
+        .circle {
+          @extend %circleIcon;
+          @include flex();
+          transition: 1s;
+          .fa-brands:hover {
+            transform: scale(1.5);
+        }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 992px){
+    .team-top {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .team-bottom {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+  }
+}

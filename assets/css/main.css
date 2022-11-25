@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #FAFAFA;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+footer .container .footer .top .top-left .icons .circle, section .container .team .icons .circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(240, 237, 237);
+  border-radius: 50%;
+  background-color: white;
+  font-size: 25px;
+  color: #072125;
+}
+
+header {
+  width: 100%;
+  background-color: #072125;
+}
+header .container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #DCF2ED;
+}
+header .container .header h4 {
+  font-size: 40px;
+}
+header .container .header .navbar ul {
+  display: flex;
+  list-style: none;
+  column-gap: 15px;
+}
+header .container .header .navbar ul li a {
+  text-decoration: none;
+  color: #DCF2ED;
+}
+header .container .header .sign-login .btn {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #DCF2ED;
+  color: #20484F;
+}
+header .container .header .sign-login .btn2 {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #DCF2ED;
+  border: 0;
+}
+
+section .container .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #072125;
+}
+section .container .head h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+section .container .head p {
+  width: 495px;
+  text-align: center;
+}
+section .container .team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 64px;
+  row-gap: 80px;
+}
+section .container .team .team-top {
+  display: flex;
+  column-gap: 57px;
+}
+section .container .team .team-bottom {
+  display: flex;
+  column-gap: 57px;
+}
+section .container .team .card img:hover {
+  opacity: 0.6;
+}
+section .container .team .card h4 {
+  color: #072125;
+  font-weight: 700;
+  font-size: 24px;
+}
+section .container .team .card p {
+  color: #072125;
+  font-weight: 400;
+  font-size: 18px;
+}
+section .container .team .icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+}
+section .container .team .icons .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+section .container .team .icons .circle .fa-brands:hover {
+  transform: scale(1.5);
+}
+@media only screen and (max-width: 992px) {
+  section .team-top {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  section .team-bottom {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #072125;
+}
+footer .container .footer {
+  margin-top: 100px;
+  color: #DCF2ED;
+}
+footer .container .footer .top {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.5px solid rgba(220, 242, 237, 0.1843137255);
+  padding: 69px 0;
+}
+footer .container .footer .top .top-left h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+footer .container .footer .top .top-left .icons {
+  display: flex;
+  column-gap: 10px;
+}
+footer .container .footer .top .top-left .icons .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #DCF2ED;
+  font-size: 20px;
+  transition: 1s;
+}
+footer .container .footer .top .top-left .icons .fa-brands:hover {
+  transform: scale(1.5);
+}
+footer .container .footer .top .top-right .list {
+  display: flex;
+  column-gap: 80px;
+}
+footer .container .footer .top .top-right .list .ul h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+footer .container .footer .top .top-right .list .ul ul {
+  list-style: none;
+}
+footer .container .footer .top .top-right .list .ul ul li {
+  margin-left: -38px;
+}
+footer .container .footer .top .top-right .list .ul ul li a {
+  text-decoration: none;
+  color: #DCF2ED;
+  font-size: 16px;
+  line-height: 30px;
+}
+footer .container .footer .bottom {
+  padding: 35px;
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  footer .top {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  footer .top .top-right .list {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
